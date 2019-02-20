@@ -1,0 +1,27 @@
+.dreamy_destinations {
+	a {
+		color: #C42431;
+		font-size: 14px;
+		text-decoration: none;
+		&:hover {
+			text-decoration: none;
+			color: #000;
+		}
+	}
+	.og_banner-section {
+		clear: both;
+		position: relative;
+		.mo_image-banner {
+			margin: 0;
+			.at_banner-img {
+				width: 100%;	
+			}
+		}
+	}
+	.container {
+		width: 1180px;
+		@include small-devices {
+			width: 100%;
+		}
+	}
+}

@@ -1,0 +1,445 @@
+.org_dd-main--header {
+	float: left;
+	width: 100%;
+    z-index: 99999;
+    .mo_dd-top-header {
+    	background: #24C4B7;
+    	width: 100%;
+    	padding: 10px 0;
+    	display: inline-block;
+    	.at_dd-top--left {
+    		float: left;
+    		span {
+    			padding-left: 10px;
+    			&:first-child {
+    				padding-left: 0;
+    			}
+    			i {
+    				padding-right: 6px;
+    			}
+    		}
+    	}
+    	.at_dd-top--right {
+    		float: right;
+    	}
+    }
+	.mo_dd-bottom-header {
+		position: relative;
+		width: 100%;
+		clear: both;
+		padding: 15px 0;
+		float: left;
+		.logo {
+			position: relative;
+			float: left;
+			width: 20%;
+			@include small-devices {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 46px;
+				text-align: center;
+				padding: 10px 0 0 0;
+				float: none;
+			}
+			h1 {
+				margin: 0;
+				font-size: 0;
+				@include small-devices {
+					text-align: left;
+				}
+				a {
+					font-size: 22px;
+					color: #000;
+					@include small-devices {
+						text-align: left;
+					}
+				}
+			}
+		}
+		#cssmenu {
+			border: 0;
+			list-style: none;
+			line-height: 1;
+			display: block;
+			position: relative;
+			-webkit-box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			box-sizing: border-box;
+			ul {
+				border: 0;
+				list-style: none;
+				line-height: 1;
+				display: block;
+				position: relative;
+				-webkit-box-sizing: border-box;
+				-moz-box-sizing: border-box;
+				box-sizing: border-box;
+				li {
+					border: 0;
+					list-style: none;
+					line-height: 1;
+					display: block;
+					position: relative;
+					-webkit-box-sizing: border-box;
+					-moz-box-sizing: border-box;
+					box-sizing: border-box;
+					a {
+						border: 0;
+						list-style: none;
+						line-height: 1;
+						display: block;
+						position: relative;
+						-webkit-box-sizing: border-box;
+						-moz-box-sizing: border-box;
+						box-sizing: border-box;
+					}
+				}
+			}
+			ul { 
+				width: 70%;
+				text-align: right;
+				padding: 0;
+				margin: 0 0 0 0;
+				float: left;
+				@include small-devices {
+					text-align: left;
+					width: 100%;
+					display: none;
+				}
+				li {
+					display: inline-block;
+					padding: 12px;
+					@include small-devices {
+						width: 100%;
+						float: none;
+						border-top: 1px solid #000;
+					}
+					a {
+						letter-spacing: 1px;
+						text-decoration: none;
+						color: #000;
+						&:last-child {
+							padding-right: 0;
+						}
+						&:hover {
+							color: #C42431;
+						}
+					}
+					ul {
+						position: absolute;
+						left: -9999px;
+						background-color: #ffffff;
+						box-shadow: 0 1px 2px;
+						top: 35px;
+						@include small-devices {
+							box-shadow: none;
+							position: relative;
+							position: relative;
+							left: 0;
+							width: 100%;
+							margin: 0;
+							text-align: left;
+						}
+						li {
+							height: 0;
+							-webkit-transition: all .25s ease;
+							-ms-transition: all .25s ease;
+							transition: all .25s ease;
+							border-bottom: 1px solid #333;
+							@include small-devices {
+								border-bottom: none;
+								border-top: 1px solid #333;
+								height: auto;
+							}
+							&:last-child {
+								border: none;
+								@include small-devices {
+									border-top: 1px solid #333;
+								}
+							}
+							a {
+								padding: 0 0 11px 0;
+								width: 126px;
+								font-size: 14px;
+								text-decoration: none;
+								color: #000;
+								font-weight: 400;
+								text-align: left;
+								@include small-devices {
+									font-size: 14px;
+									width: 100%;
+									padding: 10px 0px;
+								}
+							}
+							ul {
+								margin-left: 92%;
+								top: 0;
+								@include small-devices {
+									margin-left: 0;
+									position: relative;
+									left: 0;
+									width: 100%;
+									margin: 0;
+									text-align: left;
+								}
+							}
+						}
+						.has-sub {
+							> a {
+								&:after {
+									position: absolute;
+									top: 7px;
+									right: 11px;
+									width: 8px;
+									height: 2px;
+									display: block;
+									background: #000;
+									content: '';
+									@include small-devices {
+										display: none;
+									}
+								}
+								&:before {
+									position: absolute;
+									top: 4px;
+									right: 14px;
+									display: block;
+									width: 2px;
+									height: 8px;
+									background: #000;
+									content: '';
+									-webkit-transition: all .25s ease;
+									-ms-transition: all .25s ease;
+									transition: all .25s ease;
+									@include small-devices {
+										display: none;
+									}
+								}
+							}
+						}
+					}
+				}
+				li.has-sub {
+					> a {
+						padding-right: 30px;
+						&:after {
+							position: absolute;
+							top: 7px;
+							right: 11px;
+							width: 8px;
+							height: 2px;
+							display: block;
+							background: #000;
+							content: '';
+							@include small-devices {
+								display: none;
+							}
+						}
+						&:before {
+							position: absolute;
+							top: 4px;
+							right: 14px;
+							display: block;
+							width: 2px;
+							height: 8px;
+							background: #000;
+							content: '';
+							-webkit-transition: all .25s ease;
+							-ms-transition: all .25s ease;
+							transition: all .25s ease;
+							@include small-devices {
+								display: none;
+							}
+						}
+					}
+					&:hover > a:before {
+						top: 23px;
+						height: 0;
+					}
+				}
+			}			
+			li:hover > ul {
+				left: auto;
+				width: 100%;
+				@include small-devices {
+					top: 12px;
+				}
+				> li {
+					padding-top: 15px;
+					padding-bottom: 24px;
+					@include small-devices {
+						padding: 0 0 0 15px;
+					}
+					ul {
+						@include small-devices {
+							top: 0;
+						}
+					}
+				}
+			}
+			ul {
+				ul {
+					li {
+
+					}
+					> li.has-sub:hover > a:before {
+						top: 17px;
+						height: 0;
+					}
+				}
+				ul ul li.active a {
+					border-left: 1px solid #333;
+				}
+			}
+			> ul {
+				> li.has-sub > ul > li.active > a, ul > li.has-sub > ul > li.active > a {
+					border-top: 1px solid #333;
+				}
+			}
+		}
+		#head-mobile {
+			border: 0;
+			list-style: none;
+			line-height: 1;
+			display: block;
+			position: relative;
+			-webkit-box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			box-sizing: border-box;
+			&:after, ul:after {
+				content: ".";
+				display: block;
+				clear: both;
+				visibility: hidden;
+				line-height: 0;
+				height: 0;
+			}
+		}
+		#head-mobile {
+			display: none;
+			@include small-devices {
+					display: block;
+					padding: 23px;
+					color: #ddd;
+					font-size: 12px;
+					font-weight: 700;
+			}
+		}
+	}
+	@media screen and (max-width: 991px) {
+		.mo_dd-bottom-header {
+			.button {
+				width: 55px;
+				height: 46px;
+				position: absolute;
+				right: 0;
+				top: 0;
+				cursor: pointer;
+				z-index: 12399994;
+				&:after {
+					content: '';
+					position: absolute;
+					top: 22px;
+					right: 20px;
+					display: block;
+					height: 8px;
+					width: 20px;
+					border-top: 2px solid #000;
+					border-bottom: 2px solid #000;
+				}
+				&:before {
+					transition: all 0.3s ease;
+					position: absolute;
+					top: 16px;
+					right: 20px;
+					display: block;
+					height: 2px;
+					width: 20px;
+					background: #000;
+					content: "";
+				}
+				&.menu-opened {
+					&:after {
+						-webkit-transition: all .3s ease;
+						-ms-transition: all .3s ease;
+						transition: all .3s ease;
+						top: 23px;
+						border: 0;
+						height: 2px;
+						width: 19px;
+						background: #000;
+						-webkit-transform: rotate(45deg);
+						-moz-transform: rotate(45deg);
+						-ms-transform: rotate(45deg);
+						-o-transform: rotate(45deg);
+						transform: rotate(45deg);
+					}
+					&:before {
+						top: 23px;
+						background: #000;
+						width: 19px;
+						-webkit-transform: rotate(-45deg);
+						-moz-transform: rotate(-45deg);
+						-ms-transform: rotate(-45deg);
+						-o-transform: rotate(-45deg);
+						transform: rotate(-45deg);
+					}
+				}
+			}
+			#cssmenu {
+				.submenu-button {
+					position: absolute;
+					z-index: 99;
+					right: 0;
+					top: 0;
+					display: block;
+					height: 38px;
+					width: 46px;
+					cursor: pointer;
+				}
+				ul ul .submenu-button {
+					height: 34px;
+					width: 34px;
+				}
+				.submenu-button:after {
+					position: absolute;
+					top: 18px;
+					right: 19px;
+					width: 8px;
+					height: 2px;
+					display: block;
+					background: #000;
+					content: '';
+				}
+				ul ul .submenu-button:after {
+					top: 15px;
+					right: 13px;
+				}
+				.submenu-button {
+					&.submenu-opened:after {
+						background: #000;
+					}
+					&:before {
+						position: absolute;
+						top: 15px;
+						right: 22px;
+						display: block;
+						width: 2px;
+						height: 8px;
+						background: #000;
+						content: '';
+					}
+				}
+				ul ul .submenu-button:before {
+					top: 12px;
+					right: 16px;
+				}
+				.submenu-button.submenu-opened:before {
+					display: none;
+				}
+			}
+		}
+	}
+}
