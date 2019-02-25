@@ -23,7 +23,12 @@
     				<span class="dd-fax"><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i>wpsupport@prodesigns.com</a></span>
     			</div>
     			<div class="at_dd-top--right">
-                    
+                    <div id="wrap">
+                      <form action="" autocomplete="on">
+                          <input id="search" name="search" type="text" placeholder="What're we looking for ?">
+                           <input id="search_submit" value="Rechercher" type="submit"><i class="fa fa-search"></i>
+                      </form>
+                  </div>
     			</div>
     		</div>
     	</div>

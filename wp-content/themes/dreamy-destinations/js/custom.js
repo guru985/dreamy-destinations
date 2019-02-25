@@ -56,3 +56,20 @@
    });
   });
 })(jQuery);
+
+
+
+jQuery(document).ready(function() {
+  /*Query the user's IP address, make a request to freegeoip.net, parse json data for country code*/
+  jQuery.getJSON("http://freegeoip.net/json/", function(data) {
+    //set country code and name
+    setCountry(data.country_code, data.country_name);
+  });
+  
+})
+
+function setCountry(code, name) {
+  /*Move this <option> to the top of the list by removing it and recreating it at the top of the list*/
+  jQuery('#country_select').find('option[value="' + code + '"]').remove();
+  jQuery('#country_select').prepend('<option value="' + code + '" selected>' + name + '</option>');
+}
