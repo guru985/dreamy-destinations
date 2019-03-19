@@ -37,8 +37,6 @@ function dd_customize_register( $wp_customize ) {
 }
 add_action( 'customize_register', 'dd_customize_register' );
 
-
-
-
-
 require_once('inc/menu.php');
+require_once('inc/color-setting-api.php');
+require_once('inc/customize-api.php');

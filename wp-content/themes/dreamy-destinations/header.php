@@ -18,14 +18,14 @@
     	<div class="mo_dd-top-header">
     		<div class="container">
     			<div class="at_dd-top--left">
-    				<span class="dd-address"><a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i> New York, US</a></span>
-    				<span class="dd-phone"><i class="fa fa-phone" aria-hidden="true"></i>+1-123-456-7890</span>
-    				<span class="dd-fax"><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i>wpsupport@prodesigns.com</a></span>
+    				<span class="dd-address"><a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i> <?php echo get_theme_mod('content_text_field'); ?></a></span>
+    				<span class="dd-phone"><i class="fa fa-phone" aria-hidden="true"></i><?php echo get_theme_mod('content_number_field'); ?></span>
+    				<span class="dd-fax"><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i><?php echo get_theme_mod('content_email_field'); ?></a></span>
     			</div>
     			<div class="at_dd-top--right">
                     <div id="wrap">
                       <form action="" autocomplete="on">
-                          <input id="search" name="search" type="text" placeholder="What're we looking for ?">
+                          <input id="search" name="search" type="text" placeholder="">
                            <input id="search_submit" value="Rechercher" type="submit"><i class="fa fa-search"></i>
                       </form>
                   </div>
