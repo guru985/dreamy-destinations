@@ -1,11 +1,148 @@
-.mo_footer-logo {
-	text-align: center;
-	h1 {
+.og_main-footer--section {
+	padding: 30px 0;
+	display: none;
+	.footer-logo {
+		text-align: center;
+		padding-bottom: 14px;
+		h1 {
+			margin: 0;
+			font-size: 0;
+			a {
+				font-size: 22px;
+				color: #000;
+			}
+		}
+	}
+	.text-address {
+		p {
+			margin: 0;
+			font-size: 14px;
+			line-height: 2em;
+			padding-top: 2px;
+		}
+	}
+	.menu-footer {
+		.dd-menu--footer {
+			padding: 0;
+			margin: 0;
+			list-style: none;
+			display: block;
+			li {
+				display: inline-block;
+				padding-right: 10px;
+				line-height: 2em;
+			}
+		}
+	}
+	form {
+		input {
+			font-size: 14px;
+		}
+		.info {
+			display: inline-block;
+			input {
+				display: block;
+				width: 250px;
+				height: 20px;
+				border: 0;
+				border-radius: 3px;
+				margin: 0 0 10px 0;
+				padding: 12px 10px;
+				background: #fff;
+				&:last-child {
+					margin: 0;
+				}
+				&:focus {
+					background: #eee;
+					outline: none;
+				}
+			}
+		}
+		input[type="submit"] {
+			vertical-align: top;
+			height: 60px;
+			width: 90px;
+			margin: 0;
+			padding: 0;
+			border: 0;
+			border-radius: 3px;
+			background: pink;
+			cursor: pointer;
+			font-weight: 700;
+			letter-spacing: 1px;
+			color: #fff;
+			background: linear-gradient(45deg, #FF6C54, #FFA754);
+			&:hover {
+				background: linear-gradient(180deg, #FF6C54, #FFA754);
+			}
+		}
+	}
+}
+.og_bottom-footer {
+	padding: 10px 0 4px 0;
+	display: none;
+	p {
 		margin: 0;
-		font-size: 0;
-		a {
-			font-size: 22px;
-			color: #000;
+		font-size: 14px;
+		color: #fff;
+	}
+	.social-icons {
+		padding: 0;
+		list-style: none;
+		margin: 0;
+		li {
+			display: inline-block;
+			position: relative;
+			a {
+				display: inline-block;
+				&:before {
+					@include transformScale();
+					content: " ";
+					width: 30px;
+					height: 30px;
+					border-radius: 100%;
+					display: block;
+					background: linear-gradient(45deg, $iconColor, $accent);
+					transition: all $timing ease-out;
+				}        
+				&:hover:before {
+					transform: scale(0);
+					transition: all $timing ease-in;
+				}
+				&:hover i {
+					@include transformScale(2.2);
+					color: $iconColor;
+					background: -webkit-linear-gradient(45deg, $iconColor, $accent);
+					-webkit-background-clip: text;
+					-webkit-text-fill-color: transparent;
+					transition: all $timing ease-in;
+				}
+				i {
+					color: #fff;
+					position: absolute;
+					top: 6px;
+					left: 12px;
+					transition: all $timing ease-out;
+				}
+			}
+			.social-square {     
+				&:before {
+					background: linear-gradient(45deg, $grape, $orchid);
+					border-radius: 10%;
+				}
+				&:hover:before {
+					transform: rotate(-180deg);
+					-ms-transform: rotate(-180deg);
+					-webkit-transform: scale(-180deg);
+					border-radius: 100%;
+				}       
+				&:hover i {
+					@include transformScale(1.6);
+					color: #fff;
+					transform: scale(1.6);
+					-webkit-text-fill-color: #fff;
+				}
+			}
 		}
 	}
 }

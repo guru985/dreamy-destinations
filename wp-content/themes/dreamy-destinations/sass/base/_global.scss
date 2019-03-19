@@ -6,13 +6,17 @@
 		}
 	}
 	a {
-		color: #C42431;
 		font-size: 14px;
 		text-decoration: none;
 		&:hover {
 			text-decoration: none;
-			color: #000;
 		}
+	}
+	h1, h2, h3, h4, h5 ,h6 {
+		margin: 0;
+	}
+	p {
+		margin: 0;
 	}
 	.og_banner-section {
 		clear: both;
@@ -25,16 +29,19 @@
 			}
 		}
 		.mo_search-bar {
-			background: rgba(36, 196, 183, .5);
 			padding: 30px 0;
 			position: absolute;;
 			width: 100%;
-			bottom: 0;
-			input {
-				padding: 30px;
-			}
-			button {
-				padding: 0 30px;
+			bottom: 50%;
+			.input-group {
+				margin: 0 auto;
+				width: 50%;
+				input {
+					padding: 24px;
+				}
+				button {
+					padding: 0 30px;
+				}
 			}
 		}
 	}
