@@ -22,29 +22,6 @@
       text-decoration: none;
     }
   }
-  .card__date {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    width: 45px;
-    height: 45px;
-    padding-top: 10px;
-    background-color: #435955;
-    border-radius: 50%;
-    color: #fff;
-    text-align: center;
-    font-weight: 700;
-    line-height: 13px;
-  }
-
-  .card__date__day {
-    font-size: 14px;
-  }
-
-  .card__date__month {
-    text-transform: uppercase;
-    font-size: 10px;
-  }
   .card__thumb {
     height: 232px;
     overflow: hidden;
