@@ -25,40 +25,6 @@
 .dreamy_destinations p {
   margin: 0;
 }
-/* line 21, ../sass/base/_global.scss */
-.dreamy_destinations .og_banner-section {
-  clear: both;
-  position: relative;
-}
-/* line 24, ../sass/base/_global.scss */
-.dreamy_destinations .og_banner-section .mo_image-banner {
-  margin: 0;
-}
-/* line 26, ../sass/base/_global.scss */
-.dreamy_destinations .og_banner-section .mo_image-banner .at_banner-img {
-  width: 100%;
-  height: 500px;
-}
-/* line 31, ../sass/base/_global.scss */
-.dreamy_destinations .og_banner-section .mo_search-bar {
-  padding: 30px 0;
-  position: absolute;
-  width: 100%;
-  bottom: 50%;
-}
-/* line 36, ../sass/base/_global.scss */
-.dreamy_destinations .og_banner-section .mo_search-bar .input-group {
-  margin: 0 auto;
-  width: 50%;
-}
-/* line 39, ../sass/base/_global.scss */
-.dreamy_destinations .og_banner-section .mo_search-bar .input-group input {
-  padding: 24px;
-}
-/* line 42, ../sass/base/_global.scss */
-.dreamy_destinations .og_banner-section .mo_search-bar .input-group button {
-  padding: 0 30px;
-}
 
 /* line 1, ../sass/layout/_header.scss */
 .org_dd-main--header {
@@ -844,44 +810,177 @@
 }
 
 /* line 1, ../sass/layout/_home-page.scss */
-.og_tour-package--section {
-  padding: 50px 0 20px 0;
+.og_banner-wraper {
+  position: relative;
+  height: 626px;
+  clear: both;
 }
-
-/* line 4, ../sass/layout/_home-page.scss */
-.og_service-section {
-  padding: 50px 0;
-  background: #435955;
+/* line 5, ../sass/layout/_home-page.scss */
+.og_banner-wraper .mo_image-banner {
+  margin: 0;
 }
 /* line 7, ../sass/layout/_home-page.scss */
-.og_service-section .iconbox {
-  text-align: center;
+.og_banner-wraper .mo_image-banner .at_banner-img {
   width: 100%;
+  height: 550px;
 }
-/* line 10, ../sass/layout/_home-page.scss */
-.og_service-section .iconbox .icon {
-  width: 100px;
-  height: 100px;
-  line-height: 100px;
-  text-align: center;
-  border-radius: 50%;
-  border: 2px solid #fff;
-  display: inline-block;
-  -webkit-transition: 0.5s ease 0s;
-  -moz-transition: 0.5s ease 0s;
-  -ms-transition: 0.5s ease 0s;
-  -o-transition: 0.5s ease 0s;
-  transition: 0.5s ease 0s;
+/* line 12, ../sass/layout/_home-page.scss */
+.og_banner-wraper svg {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: auto;
 }
-/* line 23, ../sass/layout/_home-page.scss */
-.og_service-section .iconbox .icon i {
-  font-size: 30px;
-  color: #f39c12;
+
+/* line 19, ../sass/layout/_home-page.scss */
+.og_tour-type-section {
+  padding: 0 0 50px 0;
+}
+
+/* line 22, ../sass/layout/_home-page.scss */
+.og_our-customer-services {
+  width: 100%;
+  padding: 100px 0;
+  background: #435955;
+  -ms-transform: skewY(-3deg);
+  -webkit-transform: skewY(-3deg);
+  transform: skewY(-3deg);
 }
 /* line 29, ../sass/layout/_home-page.scss */
-.og_service-section .iconbox:hover .icon {
-  background: #fff;
-  border-radius: 0 100px 100px;
+.og_our-customer-services .mo_customer-services {
+  -ms-transform: skewY(3deg);
+  -webkit-transform: skewY(3deg);
+  transform: skewY(3deg);
+}
+/* line 33, ../sass/layout/_home-page.scss */
+.og_our-customer-services .mo_customer-services .at_services {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 30px 0 0 0;
+}
+/* line 38, ../sass/layout/_home-page.scss */
+.og_our-customer-services .mo_customer-services .at_services .services-blocks {
+  color: #fff;
+  position: relative;
+  width: 350px;
+  background-color: #fff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  -webkit-transition: box-shadow 0.5s;
+  transition: box-shadow 0.5s;
+  margin: 0 0 30px 30px;
+}
+/* line 48, ../sass/layout/_home-page.scss */
+.og_our-customer-services .mo_customer-services .at_services .services-blocks:first-child {
+  margin-left: 0;
+}
+/* line 51, ../sass/layout/_home-page.scss */
+.og_our-customer-services .mo_customer-services .at_services .services-blocks img {
+  max-width: 100%;
+  opacity: 1;
+  width: 100%;
+  -webkit-transition: opacity 0.35s;
+  transition: opacity 0.35s;
+}
+/* line 58, ../sass/layout/_home-page.scss */
+.og_our-customer-services .mo_customer-services .at_services .services-blocks figcaption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 30px 3em;
+  width: 100%;
+  height: 100%;
+}
+/* line 65, ../sass/layout/_home-page.scss */
+.og_our-customer-services .mo_customer-services .at_services .services-blocks figcaption::before {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  bottom: 30px;
+  left: 100%;
+  border-left: 4px solid rgba(255, 255, 255, 0.8);
+  content: '';
+  opacity: 0;
+  background-color: rgba(255, 255, 255, 0.5);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-transition-delay: 0.6s;
+  transition-delay: 0.6s;
+}
+/* line 81, ../sass/layout/_home-page.scss */
+.og_our-customer-services .mo_customer-services .at_services .services-blocks h2, .og_our-customer-services .mo_customer-services .at_services .services-blocks p {
+  margin: 0 0 5px;
+  opacity: 0;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s,-webkit-transform 0.35s,-moz-transform 0.35s,-o-transform 0.35s,transform 0.35s;
+}
+/* line 87, ../sass/layout/_home-page.scss */
+.og_our-customer-services .mo_customer-services .at_services .services-blocks h2 {
+  word-spacing: -0.15em;
+  font-weight: 300;
+  text-transform: uppercase;
+  -webkit-transform: translate3d(30%, 0%, 0);
+  transform: translate3d(30%, 0%, 0);
+  -webkit-transition-delay: 0.3s;
+  transition-delay: 0.3s;
+}
+/* line 95, ../sass/layout/_home-page.scss */
+.og_our-customer-services .mo_customer-services .at_services .services-blocks h2 span {
+  font-weight: 800;
+}
+/* line 99, ../sass/layout/_home-page.scss */
+.og_our-customer-services .mo_customer-services .at_services .services-blocks p {
+  font-weight: 200;
+  -webkit-transform: translate3d(0%, 30%, 0);
+  transform: translate3d(0%, 30%, 0);
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+}
+/* line 106, ../sass/layout/_home-page.scss */
+.og_our-customer-services .mo_customer-services .at_services .services-blocks a {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+}
+/* line 114, ../sass/layout/_home-page.scss */
+.og_our-customer-services .mo_customer-services .at_services .services-blocks:hover img {
+  opacity: 0.3;
+}
+/* line 118, ../sass/layout/_home-page.scss */
+.og_our-customer-services .mo_customer-services .at_services .services-blocks:hover figcaption h2 {
+  opacity: 1;
+  -webkit-transform: translate3d(0%, 0%, 0);
+  transform: translate3d(0%, 0%, 0);
+  -webkit-transition-delay: 0.4s;
+  transition-delay: 0.4s;
+}
+/* line 125, ../sass/layout/_home-page.scss */
+.og_our-customer-services .mo_customer-services .at_services .services-blocks:hover figcaption p {
+  opacity: 0.9;
+  -webkit-transform: translate3d(0%, 0%, 0);
+  transform: translate3d(0%, 0%, 0);
+  -webkit-transition-delay: 0.6s;
+  transition-delay: 0.6s;
+}
+/* line 132, ../sass/layout/_home-page.scss */
+.og_our-customer-services .mo_customer-services .at_services .services-blocks:hover figcaption::before {
+  background: rgba(255, 255, 255, 0);
+  left: 30px;
+  opacity: 1;
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
 }
 
 /* line 1, ../sass/components/_card.scss */
@@ -924,30 +1023,6 @@
   text-decoration: none;
 }
 /* line 25, ../sass/components/_card.scss */
-.card-layout .card__date {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  width: 45px;
-  height: 45px;
-  padding-top: 10px;
-  background-color: #435955;
-  border-radius: 50%;
-  color: #fff;
-  text-align: center;
-  font-weight: 700;
-  line-height: 13px;
-}
-/* line 40, ../sass/components/_card.scss */
-.card-layout .card__date__day {
-  font-size: 14px;
-}
-/* line 44, ../sass/components/_card.scss */
-.card-layout .card__date__month {
-  text-transform: uppercase;
-  font-size: 10px;
-}
-/* line 48, ../sass/components/_card.scss */
 .card-layout .card__thumb {
   height: 232px;
   overflow: hidden;
@@ -955,7 +1030,7 @@
   -webkit-transition: height 0.5s;
   transition: height 0.5s;
 }
-/* line 54, ../sass/components/_card.scss */
+/* line 31, ../sass/components/_card.scss */
 .card-layout .card__thumb img {
   width: 100%;
   display: block;
@@ -967,17 +1042,17 @@
   transition: opacity 0.5s, transform 0.5s;
   transition: opacity 0.5s, transform 0.5s, -webkit-transform 0.5s;
 }
-/* line 66, ../sass/components/_card.scss */
+/* line 43, ../sass/components/_card.scss */
 .card-layout .card:hover .card__thumb {
   height: 130px;
 }
-/* line 68, ../sass/components/_card.scss */
+/* line 45, ../sass/components/_card.scss */
 .card-layout .card:hover .card__thumb img {
   opacity: 0.6;
   -webkit-transform: scale(1.2);
   transform: scale(1.2);
 }
-/* line 74, ../sass/components/_card.scss */
+/* line 51, ../sass/components/_card.scss */
 .card-layout .card__body {
   position: relative;
   height: 185px;
@@ -985,11 +1060,11 @@
   -webkit-transition: height 0.5s;
   transition: height 0.5s;
 }
-/* line 81, ../sass/components/_card.scss */
+/* line 58, ../sass/components/_card.scss */
 .card-layout .card:hover .card__body {
   height: 280px;
 }
-/* line 84, ../sass/components/_card.scss */
+/* line 61, ../sass/components/_card.scss */
 .card-layout .card__category {
   position: absolute;
   top: -25px;
@@ -1002,7 +1077,7 @@
   font-size: 11px;
   line-height: 25px;
 }
-/* line 96, ../sass/components/_card.scss */
+/* line 73, ../sass/components/_card.scss */
 .card-layout .card__title {
   margin: 0;
   padding: 0 0 10px 0;
@@ -1011,14 +1086,14 @@
   font-weight: bold;
   text-transform: uppercase;
 }
-/* line 104, ../sass/components/_card.scss */
+/* line 81, ../sass/components/_card.scss */
 .card-layout .card__subtitle {
   margin: 0;
   padding: 0 0 10px 0;
   font-size: 19px;
   color: #435955;
 }
-/* line 110, ../sass/components/_card.scss */
+/* line 87, ../sass/components/_card.scss */
 .card-layout .card__description {
   position: absolute;
   left: 20px;
@@ -1038,7 +1113,7 @@
   -webkit-transition-delay: 0s;
   transition-delay: 0s;
 }
-/* line 129, ../sass/components/_card.scss */
+/* line 106, ../sass/components/_card.scss */
 .card-layout .card:hover .card__description {
   opacity: 1;
   -webkit-transform: translateY(0px);
@@ -1046,7 +1121,7 @@
   -webkit-transition-delay: 0.2s;
   transition-delay: 0.2s;
 }
-/* line 136, ../sass/components/_card.scss */
+/* line 113, ../sass/components/_card.scss */
 .card-layout .card__footer {
   position: absolute;
   bottom: 12px;
@@ -1055,14 +1130,120 @@
   font-size: 11px;
   color: #A3A9A2;
 }
-/* line 144, ../sass/components/_card.scss */
+/* line 121, ../sass/components/_card.scss */
 .card-layout .icon {
   display: inline-block;
   vertical-align: middle;
   margin: -2px 0 0 2px;
   font-size: 18px;
 }
-/* line 149, ../sass/components/_card.scss */
+/* line 126, ../sass/components/_card.scss */
 .card-layout .icon + .icon {
   padding-left: 10px;
+}
+
+/* line 2, ../sass/components/_button.scss */
+.mo_button a {
+  text-decoration: none;
+}
+/* line 4, ../sass/components/_button.scss */
+.mo_button a .button {
+  position: relative;
+  vertical-align: middle;
+  color: #000;
+  display: inline-block;
+  text-align: center;
+  transition: 0.5s;
+  padding: 10px 20px;
+  cursor: pointer;
+  border: 1px solid #000;
+  background: transparent;
+  -webkit-transition: 0.5s;
+}
+/* line 16, ../sass/components/_button.scss */
+.mo_button a .button:hover {
+  border: 1px solid rgba(0, 160, 80, 0);
+  color: #000;
+}
+/* line 19, ../sass/components/_button.scss */
+.mo_button a .button:hover::after, .mo_button a .button:hover::before {
+  -webkit-transform: scale(1);
+}
+/* line 23, ../sass/components/_button.scss */
+.mo_button a .button::before, .mo_button a .button::after {
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  -webkit-transform: scale(0);
+  transition: 0.5s;
+}
+/* line 37, ../sass/components/_button.scss */
+.mo_button a .bar::before {
+  border-bottom: 1px solid #f39c12;
+  border-left: 1px solid #f39c12;
+  -webkit-transform-origin: 100% 0%;
+}
+/* line 42, ../sass/components/_button.scss */
+.mo_button a .bar::after {
+  border-top: 1px solid #f39c12;
+  border-right: 1px solid #f39c12;
+  -webkit-transform-origin: 0% 100%;
+}
+
+/* line 52, ../sass/components/_button.scss */
+.mo_button-two a {
+  text-decoration: none;
+}
+/* line 54, ../sass/components/_button.scss */
+.mo_button-two a .button {
+  position: relative;
+  vertical-align: middle;
+  color: #fff;
+  display: inline-block;
+  text-align: center;
+  transition: 0.5s;
+  padding: 10px 20px;
+  cursor: pointer;
+  border: 1px solid #fff;
+  background: transparent;
+  -webkit-transition: 0.5s;
+}
+/* line 66, ../sass/components/_button.scss */
+.mo_button-two a .button:hover {
+  border: 1px solid rgba(0, 160, 80, 0);
+  color: #fff;
+}
+/* line 69, ../sass/components/_button.scss */
+.mo_button-two a .button:hover::after, .mo_button-two a .button:hover::before {
+  -webkit-transform: scale(1);
+}
+/* line 73, ../sass/components/_button.scss */
+.mo_button-two a .button::before, .mo_button-two a .button::after {
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  -webkit-transform: scale(0);
+  transition: 0.5s;
+}
+/* line 87, ../sass/components/_button.scss */
+.mo_button-two a .bar::before {
+  border-bottom: 1px solid #f39c12;
+  border-left: 1px solid #f39c12;
+  -webkit-transform-origin: 100% 0%;
+}
+/* line 92, ../sass/components/_button.scss */
+.mo_button-two a .bar::after {
+  border-top: 1px solid #f39c12;
+  border-right: 1px solid #f39c12;
+  -webkit-transform-origin: 0% 100%;
 }
